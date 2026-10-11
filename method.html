@@ -72,7 +72,7 @@
           <tr><td>Joy</td><td>The raw affect of PLAY</td><td>PANAS-X, Joviality</td></tr>
           <tr><td>PLAY</td><td>Alignment with Panksepp's PLAY system</td><td>ANSS, PLAY subscale</td></tr>
           <tr><td>Sociality</td><td>The NPC was experienced as a social being</td><td>Co-presence and social presence scales</td></tr>
-          <tr><td>Reciprocity</td><td>Back-and-forth between participant and NPC</td><td>In-session telemetry</td></tr>
+          <tr><td>Reciprocity</td><td>Back-and-forth between participant and NPC</td><td>In-session telemetry, where the log supports it</td></tr>
         </tbody>
       </table>
       </div>
@@ -95,7 +95,7 @@
           <tr><td>igroup Presence Questionnaire (iPQ)</td><td>14 items rated from minus 3 to plus 3</td><td>P2, P3</td></tr>
           <tr><td>Perceived Other's Co-Presence (CP)</td><td>11 statements rated 1 to 5</td><td>P3</td></tr>
           <tr><td>Social Presence (SP)</td><td>6 items rated 1 to 7</td><td>P3</td></tr>
-          <tr><td>Telemetry</td><td>Timestamped log of the participant's and the NPC's actions, recorded automatically by the environment. Each environment logged the actions that make up its own exchange (throws, hits, catches); the measure of reciprocity is whether the participant's actions were timed in response to the NPC's rather than on their own rhythm.</td><td>During the affective environment</td></tr>
+          <tr><td>Telemetry</td><td>Log of the participant's and the NPC's actions, recorded automatically by the environment. Every environment logged the actions that make up its own exchange (throws, hits, catches). Where the log carried timestamps it was used to test whether the participant's actions were timed in response to the NPC's; where it carried counts only, it describes how much interaction took place. Each environment's page says which.</td><td>During the affective environment</td></tr>
         </tbody>
       </table>
       </div>
@@ -114,31 +114,23 @@
   <section id="analysis">
     <div class="wrap">
       <h2>The rule <em>for success</em></h2>
-      <p>The same set of hypotheses, stated in advance, was tested for every environment. Each is either a threshold claim about the P3 reading or a change claim from P2 to P3.</p>
+      <p>Every environment was tested with the same three kinds of claim, stated in advance. Each paper formalises them in its own way and lists its own hypotheses; the environment pages give each set and its outcome.</p>
       <div class="table-scroll">
       <table>
-        <caption class="vh">The hypotheses tested for each environment</caption>
+        <caption class="vh">The three kinds of test applied to every environment</caption>
         <thead>
-          <tr><th scope="col">Hypothesis</th><th scope="col">Claim</th></tr>
+          <tr><th scope="col">Kind of test</th><th scope="col">What it asks</th></tr>
         </thead>
         <tbody>
-          <tr><td>H-SAM-1 (v, a, d)</td><td>At P3, valence, arousal and dominance are each high, meaning above 6.33, the top third of the 1 to 9 scale</td></tr>
-          <tr><td>H-SAM-2 (v, a, d)</td><td>Valence, arousal and dominance each rose from P2 to P3</td></tr>
-          <tr><td>H-PANASX-1</td><td>Joviality rose more from P2 to P3 than the other 12 PANAS-X subscales did</td></tr>
-          <tr><td>H-PANASX-2</td><td>At P3, Joviality is the highest PANAS-X subscale</td></tr>
-          <tr><td>H-ANSS-1</td><td>PLAY rose more from P2 to P3 than the other ANSS subscales did</td></tr>
-          <tr><td>H-ANSS-2</td><td>At P3, PLAY is the highest ANSS subscale</td></tr>
-          <tr><td>H-CP-1</td><td>Co-presence at P3 is above the scale midpoint of 3</td></tr>
-          <tr><td>H-SP-1</td><td>Social presence at P3 is above the scale midpoint of 4</td></tr>
-          <tr><td>H-TEL-1</td><td>The participant's actions were timed in response to the NPC's actions rather than on their own rhythm</td></tr>
-          <tr><td>H-iPQ-1, H-iPQ-2</td><td>Presence at P3 is above the midpoint of 0, and higher than at P2 (an explanatory variable, not a part of PLAY)</td></tr>
+          <tr><td>Threshold at P3</td><td>After the affective environment, is the reading high? Valence, arousal and dominance are tested against 6.33, the top third of the SAM scale; presence against its midpoint of 0; co-presence against its midpoint of 3; social presence against its midpoint of 4.</td></tr>
+          <tr><td>Change from P2 to P3</td><td>Did the reading rise between the post-tutorial and post-affective questionnaires? Applied to the SAM dimensions, presence, and the PANAS-X and ANSS subscales. The Water Balloon study additionally asks whether Joviality and PLAY rose more than their sibling subscales.</td></tr>
+          <tr><td>Rank at P3</td><td>After the affective environment, is Joviality the highest PANAS-X subscale, and is PLAY the highest ANSS subscale?</td></tr>
         </tbody>
       </table>
       </div>
       <ul>
-        <li>Every test is two-sided at the 5% level. Normality is checked first; the parametric test is used if it passes and the non-parametric equivalent if it does not, with Holm-Bonferroni correction across grouped tests.</li>
-        <li>PLAY is claimed only if every hypothesis is significant. A partial result, however strong, is reported as parts met rather than as PLAY elicited.</li>
-        <li>No environment met every part, so the project's finding is partial evidence of elicitation, with the pattern of which parts were met differing by environment.</li>
+        <li>Every test is two-sided at the 5% level. Normality is checked with the Shapiro-Wilk test and a Q-Q plot; the paired t-test is used if it passes and the Wilcoxon signed-rank test if it does not, with Holm correction across each family of comparisons.</li>
+        <li>To claim PLAY, an environment had to meet every one of its seven parts. None did, so each environment reports which parts were met, and the project's finding is partial evidence of elicitation, with the pattern differing by environment.</li>
       </ul>
     </div>
   </section>
