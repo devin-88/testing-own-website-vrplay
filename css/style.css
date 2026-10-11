@@ -1054,3 +1054,34 @@ figure.narrow img {
   .environment-page .gallery.charts figure:hover,
   .environment-page .gallery.charts figure:focus-within { transform: none; }
 }
+
+
+/* ---- white text panels ---------------------------------------------
+   The team's preference: body text on the environment and method pages
+   sits in solid white blocks on the coloured section washes. Each
+   section's content after its heading is wrapped in .panel.            */
+
+.panel {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0 1px 2px rgba(27, 21, 64, 0.06);
+}
+
+.panel > :first-child { margin-top: 0; }
+.panel > :last-child { margin-bottom: 0; }
+.panel p:last-child, .panel ul:last-child, .panel .table-scroll:last-child { margin-bottom: 0; }
+
+/* Placeholders inside a panel lose the dashed purple box and read as
+   muted text, so a half-finished page still looks like the finished one. */
+.panel .todo {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--muted);
+  font-style: italic;
+}
+.panel td .todo { padding: 0; font-size: inherit; }
+
+/* The sticky heading keeps its left column; the panel takes the right. */
+.environment-page #results h2 { grid-row: 1; }
