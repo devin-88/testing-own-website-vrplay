@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Balloon Fight: VRPLAY</title>
+  <meta name="description" content="VRPLAY: a 2026 Computer Science honours project at the University of Cape Town investigating whether a virtual environment can elicit Panksepp's PLAY emotion system.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="environment-page environment-page--water">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">VRPLAY</a>
+    <nav class="site-nav" aria-label="Site">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apple-interaction.html">Apple Interaction</a></li>
+        <li><a href="water-balloon-fight.html" aria-current="page">Water Balloon Fight</a></li>
+        <li><a href="bunny-rally.html">Bunny Rally</a></li>
+        <li><a href="method.html">Method</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+
+  <section class="page-title">
+    <div class="wrap">
+      <div class="page-title-copy">
+        <p class="section-kicker">02 / Environment</p>
+        <h1>Water <em>Balloon Fight</em></h1>
+        <p class="byline">Designed, built and evaluated by Devin Marais</p>
+        <p class="lede">A water balloon fight across a backyard pool with a boy NPC that matches the player's throwing skill, so play passes through winning, losing and fair phases.</p>
+      </div>
+      <figure class="cover">
+        <img src="img/water-balloon-fight.jpg" alt="Screenshot of the Water Balloon Fight environment: a backyard pool with buckets of water balloons in the foreground" width="1600" height="900" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <section id="overview">
+    <div class="wrap">
+      <h2>Start with the <em>interaction</em></h2>
+      <p>The participant stands at one end of a backyard pool on a bright summer day, with a bucket of water balloons beside them. Diagonally across the pool is a young boy with a bucket of his own. For seven and a half minutes they throw balloons at each other, ducking behind cover and popping out to throw, while the NPC quietly adjusts how well it plays so that the participant spends time winning, time losing, and time in an even fight.</p>
+      <p>The environment is an application of an affective VE design framework adapted for Panksepp's primary emotion systems. Existing frameworks for designing emotional virtual environments work from the dimensional model of emotion, which describes a feeling only by its valence, arousal and dominance. A Pankseppian system such as PLAY needs more than that: it has innate triggers that must be present, suppressors that must be designed out, and a categorical character (for PLAY, social and reciprocal) that a coordinate cannot capture. The adapted framework adds those steps, and the Water Balloon environment is its first test.</p>
+      <p>The outcome: the environment reliably produced joy, high pleasantness, a rise in felt playfulness and a sense that the NPC was a social being, and participants felt strongly present in it. It did not produce high arousal, high dominance or statistically detectable reciprocal throwing, so against the pre-specified criterion PLAY was not elicited in full. The full account is in the <a href="docs/Marais_Final_Paper.pdf">final paper</a>.</p>
+    </div>
+  </section>
+
+  <section id="framework">
+    <div class="wrap">
+      <h2>The design <em>framework</em></h2>
+      <p>The framework begins by analysing the target system and ends by choosing the instruments that will detect it. Between those two points it follows Dozio et al.'s element-selection method, with two additions: an explicit list of innate triggers and suppressors, and an affective framing step that chooses the concrete scenario.</p>
+      <div class="framework-pair">
+        <figure class="narrow">
+          <img src="img/wb-fig1-framework.png" alt="Flow diagram of the adapted framework: target system, then detectable signatures and innate triggers and suppressors, then affective framing, semantic, element selection, presence levers, and detection" width="1188" height="1756">
+          <figcaption>The adapted affective VE design framework for Pankseppian primary process systems.</figcaption>
+        </figure>
+        <figure class="narrow">
+          <img src="img/wb-fig2-framework-wb.png" alt="The adapted framework filled in for the Water Balloon environment, listing joy and high VAD as raw affect, social and reciprocal as categorical signature, rough and tumble and fair role reversals as triggers, unfamiliar environment and perceived threats as suppressors, the friendly water balloon fight framing, the chosen sensory, dynamism and interaction elements, the presence levers, and the detection instruments" width="1188" height="1756">
+          <figcaption>The completed framework for the Water Balloon environment.</figcaption>
+        </figure>
+      </div>
+      <h3>Applied to PLAY</h3>
+      <ul>
+        <li>Detectable signatures. Raw affect: joy with high valence, arousal and dominance. Categorical signature: the interaction is social and reciprocal.</li>
+        <li>Innate triggers: rough-and-tumble interaction and fair role reversals, where each side alternates between attacking and defending and neither loses for too long.</li>
+        <li>Suppressors to design out: anything that would arouse FEAR, RAGE or PANIC/GRIEF, chiefly perceived threats and an unfamiliar environment, since PLAY only runs when the negative systems are quiet.</li>
+        <li>Affective framing: a friendly water balloon fight. Throw-and-dodge games and water balloon fights are learned associations with play, the stakes are plainly non-serious, the NPC is a non-threatening child, and a generic suburban backyard is familiar enough that nothing hidden could feel dangerous.</li>
+        <li>Element selection: greenery, pool, blue sky, high-saturation colours, water splashes, birdsong and controller vibration; gentle waves on the water and an NPC that moves with varied human-like speed; the ability to throw and dodge. Elements were chosen by their published valence, arousal and dominance ratings so that the environment's overall tone matched the target.</li>
+        <li>Presence levers: high agency, because the participant controls what, where and how they throw and can move their body to dodge; high immersion from the HTC Vive Pro.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="design">
+    <div class="wrap">
+      <h2>What happens <em>in this world</em></h2>
+      <p>The fairness trigger is the hardest to deliver, because a fixed-difficulty opponent is fair for only one kind of player. The NPC therefore measures the participant's throwing skill from the same levers it plays with (throw accuracy, throw frequency and reaction time) and then sets its own skill above, below or equal to the participant's. The experience is sequenced so that every participant gets guaranteed periods of winning, losing and even play, which is the role reversal Panksepp observed in animal play. As the session goes on the NPC also introduces advanced moves: high-velocity throws, two-handed throws, high lobbed throws and side throws from behind its cover.</p>
+      <p>Built in Unity 6 (6000.3.17f1) with the XR Interaction Toolkit and OpenXR, targeting the HTC Vive Pro. The NPC is a finite state machine (hide, stalk, throw, duck) with a separate difficulty layer, a threat detector that watches incoming balloons, and a line-of-sight check that decides when the player is exposed.</p>
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <figure class="gallery-supporting">
+          <img src="img/wb-npc-throw.jpg" alt="The NPC releasing a balloon from behind the far side of the pool, seen from the player's position" width="1600" height="900">
+          <figcaption><span class="gallery-number">01</span><span>The NPC releases a balloon</span></figcaption>
+        </figure>
+        <figure class="gallery-featured">
+          <img src="img/wb-balloon-flight.jpg" alt="A balloon in the air over the pool, midway between the NPC and the player" width="1600" height="900">
+          <figcaption><span class="gallery-number">02</span><span>Balloon in flight</span></figcaption>
+        </figure>
+        <figure class="gallery-supporting">
+          <img src="img/wb-splash.jpg" alt="A blue splash of water across the player's view as the balloon lands" width="1600" height="900">
+          <figcaption><span class="gallery-number">03</span><span>Splash on impact across the player's view</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="wrap">
+      <h2>How it <em>was tested</em></h2>
+      <p>The study followed the <a href="method.html">shared procedure</a>: a within-subjects design with 25 participants, each completing the tutorial environment and then the Water Balloon environment, with SAM, PANAS-X and ANSS at all three readings, the iPQ after each environment, and the co-presence and social presence scales after the Water Balloon environment. Throw telemetry was recorded for 23 of the 25 participants.</p>
+      <p>Reciprocity was tested from the telemetry by asking whether participants answered the NPC's throws. A throw counts as answered if the participant threw at least once before the NPC's next throw. Because some answers would happen by chance under any throwing rhythm, each participant's throw record was time-shifted 1000 times to produce surrogate records that keep their rhythm but break alignment with the NPC. The observed answered proportion minus the surrogate average is the reciprocity index; if participants threw on their own rhythm it is zero.</p>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="wrap">
+      <h2>What this experiment <em>showed</em></h2>
+      <p class="verdict">3 of 7 parts met</p>
+    <ul class="tally">
+      <li class="part">Valence <span class="vh">(partly met)</span></li>
+      <li class="none">Arousal <span class="vh">(not met)</span></li>
+      <li class="none">Dominance <span class="vh">(not met)</span></li>
+      <li class="none">Reciprocity <span class="vh">(not met)</span></li>
+      <li class="met">Sociality <span class="vh">(met)</span></li>
+      <li class="met">Joy <span class="vh">(met)</span></li>
+      <li class="met">PLAY <span class="vh">(met)</span></li>
+    </ul>
+      <p class="tally-note">Filled: met. Half: partly met. Empty: not met.</p>
+      <p>Participants were happy and felt present. Valence at P3 was well above the high threshold (median 8 on a 9-point scale), Joviality rose more than any other PANAS-X subscale and finished as the highest subscale, the PLAY subscale of the ANSS rose more than any other Pankseppian subscale, and the NPC was perceived as a social being on both the co-presence and social presence scales. Presence was high: the mean iPQ score of 1.41 sits in the high-to-exceptional range for head-mounted display studies, and was significantly higher than after the tutorial.</p>
+      <p>Three things fell short. Arousal and dominance were descriptively above the high threshold but not significantly so, and no SAM reading rose significantly from P2 to P3. The PLAY subscale was not significantly higher than SEEKING at P3, which the paper attributes partly to SEEKING's sensitivity to VR novelty and partly to SEEKING being a general appetitive system that energises the others. And the reciprocity index, though positive, was not significantly different from zero.</p>
+      <div class="table-scroll">
+      <table class="wide">
+        <caption class="vh">Outcome of every hypothesis test</caption>
+        <thead>
+          <tr><th scope="col">Hypothesis</th><th scope="col">Test</th><th scope="col">Result</th><th scope="col">Outcome</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>H-SAM-1v: valence at P3 above 6.33</td><td>Wilcoxon</td><td>V = 325, p &lt; .001, r = 1.00</td><td>Supported</td></tr>
+          <tr><td>H-SAM-1a: arousal at P3 above 6.33</td><td>Wilcoxon</td><td>V = 206, p = .245, r = .27</td><td>Not supported</td></tr>
+          <tr><td>H-SAM-1d: dominance at P3 above 6.33</td><td>Wilcoxon</td><td>V = 230, p = .141, r = .42</td><td>Not supported</td></tr>
+          <tr><td>H-SAM-2v: valence rose, P2 to P3</td><td>Wilcoxon</td><td>V = 35, p = .134, r = .56</td><td>Not supported</td></tr>
+          <tr><td>H-SAM-2a: arousal rose, P2 to P3</td><td>Wilcoxon</td><td>V = 92, p = .217, r = .35</td><td>Not supported</td></tr>
+          <tr><td>H-SAM-2d: dominance rose, P2 to P3</td><td>Wilcoxon</td><td>V = 63, p = .517, r = .20</td><td>Not supported</td></tr>
+          <tr><td>H-PANASX-1: Joviality rose most, P2 to P3</td><td>Wilcoxon</td><td>V = 236, p = .050, r = .45</td><td>Supported</td></tr>
+          <tr><td>H-PANASX-2: Joviality highest at P3</td><td>Paired t</td><td>t(24) = 2.15, p = .042, d = 0.43</td><td>Supported</td></tr>
+          <tr><td>H-ANSS-1: PLAY rose most, P2 to P3</td><td>Paired t</td><td>t(24) = 3.26, p = .003, d = 0.65</td><td>Supported</td></tr>
+          <tr><td>H-ANSS-2: PLAY highest at P3</td><td>Wilcoxon</td><td>V = 84.5, p = .718, r = .10 (runner-up SEEKING)</td><td>Not supported</td></tr>
+          <tr><td>H-CP-1: co-presence above midpoint</td><td>Wilcoxon</td><td>V = 306.5, p &lt; .001, r = .89</td><td>Supported</td></tr>
+          <tr><td>H-SP-1: social presence above midpoint</td><td>One-sample t</td><td>t(24) = 2.49, p = .020, d = 0.50</td><td>Supported</td></tr>
+          <tr><td>H-TEL-1: throws answered the NPC</td><td>One-sample t</td><td>t(22) = 1.32, p = .202, d = 0.27</td><td>Not supported</td></tr>
+          <tr><td>H-iPQ-1: presence above midpoint</td><td>One-sample t</td><td>t(24) = 10.20, p &lt; .001, d = 2.04</td><td>Supported</td></tr>
+          <tr><td>H-iPQ-2: presence rose, P2 to P3</td><td>Paired t</td><td>t(24) = 2.46, p = .021, d = 0.49</td><td>Supported</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="muted">p-values within the SAM, PANAS-X and ANSS groups are Holm-Bonferroni adjusted. Effect sizes are the matched rank-biserial correlation (r) for Wilcoxon tests and Cohen's d (d<sub>z</sub> for paired designs) for t-tests.</p>
+      <div class="gallery charts">
+        <figure>
+          <img src="img/wb-fig5-sam.png" alt="Box plots of SAM valence, arousal and dominance at P1, P2 and P3, with the 6.33 high threshold marked; valence sits clearly above it at P2 and P3, arousal and dominance straddle it" width="752" height="513">
+          <figcaption><span class="gallery-number">01</span><span>SAM valence, arousal and dominance across the three readings, with the 6.33 high threshold</span></figcaption>
+        </figure>
+        <figure>
+          <img src="img/wb-fig7-panasx.png" alt="Box plots of all 13 PANAS-X subscales at P3, with Joviality highest and the negative subscales at the floor" width="752" height="513">
+          <figcaption><span class="gallery-number">02</span><span>All PANAS-X subscales at P3</span></figcaption>
+        </figure>
+        <figure>
+          <img src="img/wb-fig9-anss.png" alt="Box plots of the seven ANSS subscales at P3, with PLAY and SEEKING both near 20 and the negative systems near the floor of 5" width="752" height="513">
+          <figcaption><span class="gallery-number">03</span><span>All ANSS subscales at P3</span></figcaption>
+        </figure>
+        <figure>
+          <img src="img/wb-fig10-cp-sp.png" alt="Box plots of co-presence and social presence at P3, both above their scale midpoints" width="752" height="513">
+          <figcaption><span class="gallery-number">04</span><span>Co-presence (midpoint 3) and social presence (midpoint 4) at P3</span></figcaption>
+        </figure>
+        <figure>
+          <img src="img/wb-fig11-telemetry.png" alt="Line graph of the proportion of NPC throws answered against time lag from the NPC's throw, with a spike before the throw and a dip after it, against a flat surrogate line" width="752" height="513">
+          <figcaption><span class="gallery-number">05</span><span>How often participants threw relative to an NPC throw at lag zero, against the surrogate baseline</span></figcaption>
+        </figure>
+        <figure>
+          <img src="img/wb-fig12-ipq.png" alt="Box plots of overall iPQ presence at P2 and P3, both above zero, P3 higher" width="752" height="513">
+          <figcaption><span class="gallery-number">06</span><span>Overall iPQ presence after the tutorial (P2) and after the Water Balloon environment (P3)</span></figcaption>
+        </figure>
+      </div>
+      <h3>What it means</h3>
+      <p>Valence did not rise from P2 to P3 because it had nowhere to go: the novelty of VR had already pushed it to a mean of 8.10 at P2. Arousal and dominance most likely suffered from the throwing mechanism, which gave participants an average hit rate of 12.6%. Missing the NPC over and over is repetitive, and repetition lowers arousal; repeated failure also reduces the sense of control that dominance measures. The reciprocity graph still shows the pattern you would expect from a real exchange, a pause after each NPC throw and a reply shortly after, even though the summary test did not reach significance.</p>
+      <p>Two changes are recommended before the environment is tested again: stronger throw assists so that participants hit the NPC often enough to stay aroused and in control, and a sample of experienced VR users so that the novelty effect stops masking what the environment does on its own.</p>
+    </div>
+  </section>
+
+  <section id="documents">
+    <div class="wrap">
+      <h2>Keep exploring <em>the project</em></h2>
+      <div class="table-scroll">
+      <table>
+        <caption class="vh">Documents for the Water Balloon Fight environment</caption>
+        <thead>
+          <tr><th scope="col">Document</th><th scope="col">Format</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="docs/Marais_Final_Paper.pdf">Final paper: Playing with Virtual Reality: Eliciting PLAY through a Water Balloon Virtual Environment</a></td><td>PDF</td></tr>
+          <tr><td>Literature review <span class="todo">file to be added</span></td><td>PDF</td></tr>
+          <tr><td>Virtual environment design specification <span class="todo">file to be added</span></td><td>PDF</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <h3>Source code</h3>
+      <p class="todo">Link to the compressed source archive for this environment, with a one-line note on what it contains and how to open it.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>VRPLAY is a 2026 Computer Science honours project in the Department of Computer Science, University of Cape Town.</p>
+    <p>Zenande Mdludlu, Karla Alaro and Devin Marais. Supervised by Prof. James Gain.</p>
+    <p><a href="contact.html">Contact</a> &middot; <a href="resources.html">Resources</a></p>
+  </div>
+</footer>
+</body>
+</html>
