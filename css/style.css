@@ -1085,3 +1085,50 @@ figure.narrow img {
 
 /* The sticky heading keeps its left column; the panel takes the right. */
 .environment-page #results h2 { grid-row: 1; }
+
+
+/* ---- layout overrides for the Water Balloon page -------------------- */
+
+/* A section that should run full width instead of the two-column
+   case-study grid. Add class="full" to the section. */
+.environment-page section.full .wrap,
+.environment-page #overview.full .wrap,
+.environment-page #results.full .wrap,
+.environment-page #documents.full .wrap { display: block; }
+.environment-page section.full h2,
+.environment-page #overview.full h2,
+.environment-page #results.full h2,
+.environment-page #documents.full h2 {
+  position: static;
+  max-width: 14ch;
+  margin-bottom: 1.5rem;
+}
+.environment-page section.full table { max-width: none; }
+.environment-page section.full .gallery.charts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Text beside a tall diagram inside a panel */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(14rem, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+.split-text p:last-child { margin-bottom: 0; }
+.split-figure {
+  margin: 0;
+  max-width: 22rem;
+  justify-self: end;
+}
+.split-figure img {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+@media (max-width: 48rem) {
+  .split { grid-template-columns: 1fr; }
+  .split-figure { justify-self: start; }
+  .environment-page section.full .gallery.charts { grid-template-columns: 1fr; }
+}
